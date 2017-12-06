@@ -1,3 +1,9 @@
-<h1>Blocitoff</h1>
-<p>Manage your todo list and stay accountable</p>
-<%= link_to "Let's get started!", new_user_session_path, :class => 'navbar-link' %>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Blocitoff</h1>
+    <p>A self-destructing to-do list to keep you focused on the things that matter</p>
+
+    <%= link_to "Sign In", new_user_session_path, class: 'btn btn-info btn-lg' %>
+    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-info btn-lg"%>
+  </div>
+</div>
