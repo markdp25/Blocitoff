@@ -1,5 +1,10 @@
 <div class="container">
   <h1><%= @user.email %></h1>
 
-  <h4> My Lists: </h4>
+  <div class="col-md-8">
+   <%= render partial: 'items/form', locals: { item: @item } %>
+ </div>
+
+ <div class="col-md-8">
+   <%= render partial: 'items/item', locals: { item: @item } %>
 </div>
