@@ -34,6 +34,8 @@ gem 'devise'
 
 gem 'bootstrap-sass'
 
+gem 'faker'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
