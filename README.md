@@ -1,24 +1,27 @@
-# README
+# Blocitoff
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Blocitoff is a self destructing ToDo list application. Users can create and delete todo list items, view other user profiles. Items automatically delete after seven days via Rake automation.
 
-Things you may want to cover:
+This app was created as part of the Bloc Web Development course.
 
-* Ruby version
+# Features
 
-* System dependencies
+* Users can create a standard account in order to create, edit and delete items.
 
-* Configuration
+* Users can view other's profiles, but cannot interact with their items.
 
-* Database creation
+* After seven days an automated rake scheduler will parse all current items. Any item older than 7 days will be deleted.
 
-* Database initialization
+# Deploy
 
-* How to run the test suite
+To run Blocitoff locally:
 
-* Services (job queues, cache servers, search engines, etc.)
+* Clone the repository
 
-* Deployment instructions
+* Run `bundle install`
 
-* ...
+* Create and migrate the SQLite database with `rake db:create` and `rake db:migrate`
+
+* Start the server using `rails s`
+
+* Run the app on `localhost:3000`
