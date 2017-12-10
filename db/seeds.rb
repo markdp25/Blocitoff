@@ -18,12 +18,20 @@ users = User.all
   )
 end
 
+30.times do
+    item = Item.create!(
+    user: users.sample,
+    name: Faker::Seinfeld.quote,
+    created_at: 3.months.ago
+    )
+  end
+
   # Create an admin user
-  admin = User.create!(
-  email:          'admin@example.com',
-  password:       'password',
-  confirmed_at:   Time.now
-  )
+  #admin = User.create!(
+  #email:          'admin@example.com',
+  #password:       'password',
+  #confirmed_at:   Time.now
+  #)
 
 
 puts "Seed finished"
